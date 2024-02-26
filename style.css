@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    color: #fff;
+}
+
+.green-space{
+    background-color: #128C7E;
+    height: 20vh;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+}
