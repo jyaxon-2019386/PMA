@@ -1,0 +1,1 @@
+const palabrasAhorcado = ['CONSOLA', 'GRAFICA', 'MONITOR', 'VENTANA' ];
