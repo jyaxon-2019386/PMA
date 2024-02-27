@@ -1,0 +1,111 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "adoptionSystem",
+    "dateExported": "2024-02-27T00:10:48.608Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "53f2297f-7f76-4f2d-9353-e9d712fca874",
+            "name": "ADMIN",
+            "containerId": "",
+            "created": "2024-02-26T22:17:12.169Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d446215a-6e27-4409-8177-772438e41c54",
+            "name": "CLIENT",
+            "containerId": "",
+            "created": "2024-02-26T22:17:34.297Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "179510bc-bb39-4a3d-8bcb-41de4c1f708c",
+            "name": "APPOINTMENT",
+            "containerId": "53f2297f-7f76-4f2d-9353-e9d712fca874",
+            "created": "2024-02-26T22:18:05.353Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "fdfafdd9-f176-4199-b4c1-3f14ec5945e6",
+            "name": "ANIMAL",
+            "containerId": "53f2297f-7f76-4f2d-9353-e9d712fca874",
+            "created": "2024-02-26T22:18:47.510Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "32032fe8-30a7-4168-8c9f-202d95665940",
+            "name": "USER",
+            "containerId": "53f2297f-7f76-4f2d-9353-e9d712fca874",
+            "created": "2024-02-26T22:18:51.478Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "568e5a0f-8576-4b95-9db8-fad021c0d7bb",
+            "colId": "a35eb5ca-1a8d-4aab-a045-d13face5b583",
+            "containerId": "179510bc-bb39-4a3d-8bcb-41de4c1f708c",
+            "name": "APPOINTMENT",
+            "url": "/appointment/save",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-26T22:31:26.686Z",
+            "modified": "2024-02-26T23:25:01.284Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWM1NzUwMTc3YWM5ZTdhMDk2NTk0ODkiLCJ1c2VybmFtZSI6Imp5YXhvbiIsIm5hbWUiOiJKdWFuIFBhYmxvIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwODk4OTU1NSwiZXhwIjoxNzA5MDAwMzU1fQ.09bZ0R9HLn_7mJc6OvBmbD6SsZjsI5R_f8ktb_orPCw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "animal",
+                        "value": "65cae812b69c11e3cc16e6e6"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65caea98b69c11e3cc16e6ec"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2024/01/04 14:00:00"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "feb55ab6-07d7-4ec2-87f0-79addee22d60",
+            "colId": "a35eb5ca-1a8d-4aab-a045-d13face5b583",
+            "containerId": "fdfafdd9-f176-4199-b4c1-3f14ec5945e6",
+            "name": "SEARCH",
+            "url": "/animal/search",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-26T22:19:02.502Z",
+            "modified": "2024-02-26T22:25:29.119Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Sky"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
